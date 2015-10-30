@@ -6,8 +6,7 @@ gem 'rails', '4.2.3'
 
 gem 'bootstrap-sass', '~>3.3.5'
 #gem 'autoprefixer-rails', '~>5.2.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 #install devise
 gem 'devise', '~>3.5.1'
 # Use SCSS for stylesheets
@@ -39,6 +38,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
 
+# Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
   gem 'rspec-rails', '3.2.3'
   gem 'guard-rspec', require: false
   gem 'spring-commands-rspec'
@@ -56,5 +57,11 @@ end
 group :test do
 
   gem 'capybara', '2.4.4'
+end
+
+group :production do
+  
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
