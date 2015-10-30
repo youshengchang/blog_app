@@ -1,10 +1,6 @@
 source 'https://rubygems.org'
 
-<<<<<<< HEAD
-ruby '2.1.5'
-=======
-ruby '2.2.1'
->>>>>>> 6a9286807c00b6ab14b425514b4b7c49b48fde11
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
@@ -65,11 +61,6 @@ group :test do
 end
 
 group :production do
-<<<<<<< HEAD
-
-=======
-   
->>>>>>> 6a9286807c00b6ab14b425514b4b7c49b48fde11
   gem 'pg'
   gem 'rails_12factor'
 end
